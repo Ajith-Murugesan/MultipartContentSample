@@ -1,0 +1,11 @@
+<div>
+  <h1>Students List</h1>{{name}}
+<button type="button" (click)="fetchAndDownload()">download</button>
+  <ul *ngIf="students.length > 0">
+    <li *ngFor="let student of students">
+      {{ student.id }} - {{ student.name }} (Age: {{ student.age }}, Class: {{ student.class }})
+    </li>
+  </ul>
+
+  <p *ngIf="students.length === 0">No students fetched yet.</p>
+</div>

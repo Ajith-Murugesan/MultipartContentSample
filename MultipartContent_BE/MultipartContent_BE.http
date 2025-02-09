@@ -1,0 +1,6 @@
+@MultipartContent_BE_HostAddress = http://localhost:5240
+
+GET {{MultipartContent_BE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
